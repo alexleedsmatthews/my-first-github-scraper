@@ -50,8 +50,8 @@ jobs:
                   }
               ]
               }
-            ] 
-        - name: Slack Notification on FAILURE
+              ] 
+    - name: Slack Notification on FAILURE
       if: failure()
       uses: tokorom/action-slack-incoming-webhook@main
       env:
